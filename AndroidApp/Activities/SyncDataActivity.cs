@@ -35,11 +35,15 @@ namespace OdborkyApp.Activities
 
         private void OnSyncFail(object sender, Exception e)
         {
-            Toast.MakeText(this, "Při synchronizaci došlo k chybě: " + e.Message, ToastLength.Long);
-            Wait(400);
-
-            StartActivity(typeof(HomeActivity));
-            Finish();
+            if (typeof(NotConnectedException) == e.GetType())
+            {
+                StartActivity(typeof(HomeActivity));
+                Finish();
+            }
+            else
+            {
+                FinishAndRemoveTask();
+            }
         }
 
         private void OnSyncSuccess(object sender, EventArgs e)

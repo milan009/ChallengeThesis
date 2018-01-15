@@ -61,7 +61,8 @@ namespace OdborkyApp.Service
             {
                 var fetchedUsers = _client.FetchCollection<User>("users", "User");
                 var fetchedChallenges = _client.FetchCollection<Challenge>("challenges", "Challenge");
-                var fetchedChallengeProgess = _client.FetchCollection<ChallengeProgress>("progress/challenges", "ChallengeProgress");
+                var fetchedChallengeProgess =
+                    _client.FetchCollection<ChallengeProgress>("progress/challenges", "ChallengeProgress");
                 var fetchedTaskProgess = _client.FetchCollection<TaskProgress>("progress/tasks", "TaskProgress");
 
                 SyncChallenges(fetchedChallenges);
@@ -70,6 +71,10 @@ namespace OdborkyApp.Service
                 SyncCollection(fetchedTaskProgess);
 
                 PullSuccess?.Invoke(this, null);
+            }
+            else
+            {
+                throw new NotConnectedException();
             }
         }
 
@@ -90,6 +95,10 @@ namespace OdborkyApp.Service
                 }
 
                 PushSuccess?.Invoke(this, null);
+            }
+            else
+            {
+                throw new NotConnectedException();
             }
         }
 
