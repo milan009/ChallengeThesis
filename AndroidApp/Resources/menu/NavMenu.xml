@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single"
+         android:id="@+id/nav_top">
+    <item
+      android:id="@+id/nav_home"
+      android:title="Domů" />
+    <item
+      android:id="@+id/nav_challenges"
+      android:title="Odborky" />
+  </group>
+  <group android:checkableBehavior="single"
+         android:id="@+id/nav_middle">
+    <item
+      android:id="@+id/nav_scanRequest"
+      android:title="Potvrdit žádost" />
+    <item
+      android:id="@+id/nav_snycManual"
+      android:title="Synchronizovat" />
+  </group>
+  <group android:checkableBehavior="single"
+         android:id="@+id/nav_bottom">
+    <item
+      android:id="@+id/nav_troop"
+      android:title="Oddíl" />
+  </group>
+</menu>

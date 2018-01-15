@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <android.support.v4.widget.Space
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/space1"
+        p1:minHeight="50px" />
+    <TextView
+        p1:text="Vítá Vás aplikace Odborky"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:id="@+id/textView1"
+        p1:gravity="center"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content" />
+    <TextView
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView2"
+        p1:layout_marginLeft="30px"
+        p1:layout_marginRight="30px"
+        p1:layout_marginTop="20px"
+        p1:text="@string/WelcomeText" />
+    <Button
+        p1:text="Pokračovat"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/welcomeBtn"
+        p1:layout_marginTop="20px"
+        p1:layout_marginLeft="25px"
+        p1:layout_marginRight="25px"
+        p1:minHeight="120px" />
+</LinearLayout>

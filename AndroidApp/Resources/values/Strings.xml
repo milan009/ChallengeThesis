@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">Odborky.App</string>
+    <string name="WelcomeText">
+      Při prvním spuštění této aplikace je potřeba zaregistrovat zařízení k Vašemu účtu ve SkautISu a následně synchronizovat uložená data se serverem. Je vyžadováno připojení k internetu.\n\n
+      Po kliknutí na tlačítko níže se Vám zobrazí přihlašovací formulář. Přihlašování i prvotní synchronizace mohou trvat delší dobu, buďte trpěliví.\n\n
+      Při každém dalším spuštění se aplikace pokouší o synchronizaci, ale objemy zasílaných dat již budou menší a vše by mělo proběhnout v mžiku. Tato obrazovka se Vám již příště nezobrazí.
+    </string>
+</resources>
